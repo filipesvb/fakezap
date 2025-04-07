@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fakezap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="configuration-container">
+        <div class="configuration-name__container">
+          <input type="text" id="configuration-name" placeholder="Unknown" />
+          <button>
+            <img
+              src="./assets/expand_circle_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <img id="demo" src="" alt="" />
+        <label class="configuration-image">
+          Selecione a imagem
+          <input
+            type="file"
+            accept="image/png, image/gif, image/jpeg"
+            id="configuration-image"
+          />
+        </label>
+      </div>
+      <!--  -->
+      <div class="phone">
+        <!-- Header -->
+        <div class="phone__header">
+          <div class="phone__header__left">
+            <div class="profile__back-button">
+              <img
+                src="./assets/arrow_back_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="profile__picture" id="profile__picture"></div>
+            <div class="profile__name">Unknown</div>
+          </div>
+          <div class="phone__header__right">
+            <div class="video-button">
+              <img
+                src="./assets/videocam_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="call-button">
+              <img
+                src="./assets/call_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="more-button">
+              <img
+                src="./assets/more_vert_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- End-Header -->
+        <div class="phone__body">
+          <ul class="messages__list">
+            <li class="message">
+              <div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="phone__footer">
+          <div class="phone__footer__left">
+            <div class="emoji-button">
+              <img
+                src="./assets/mood_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="text-container">
+              <input type="text" placeholder="Message" 1 />
+            </div>
+            <div class="attach-container">
+              <img
+                src="./assets/attach_file_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+            <div class="camera-container">
+              <img
+                src="./assets/photo_camera_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="phone__footer__right">
+            <img
+              src="./assets/mic_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+    </div>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+.phone {
+  border: solid 2px black;
+  border-radius: 1rem;
+  width: 380px;
+  height: 740px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 4%;
+  position: relative;
+}
+
+.phone__header {
+  width: 100%;
+  background-color: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.4rem;
+}
+
+.phone__header__left {
+  display: flex;
+  align-items: center;
+
+  .profile__picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../assets/image.png");
+    background-size: contain;
+    background-position: center;
+    margin-right: 0.6rem;
+    margin-left: 0.1rem;
+  }
+  .profile__name {
+    font-family: "Roboto";
+    font-size: 18px;
+  }
+}
+
+.phone__header__right {
+  display: flex;
+  align-items: center;
+
+  div {
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.phone__body {
+  height: 100%;
+  background-color: #ccc;
+  background-image: url("../assets/whatsapp_background.png");
+  background-size: cover;
+}
+
+/* ******************** */
+
+.phone__footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  bottom: 0;
+  width: 100%;
+  padding: 0.25rem 0.25rem;
+}
+.phone__footer__left {
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+  flex: 2;
+  border-radius: 2rem;
+  padding: 0.5rem;
+
+  .emoji-button {
+    display: flex;
+    align-items: center;
+    margin-right: 0.25rem;
+  }
+
+  .text-container {
+    width: 100%;
+    height: 100%;
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .attach-container,
+  .camera-container {
+    margin: 0 0.15rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.phone__footer__right {
+  background-color: #17b999;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+}
